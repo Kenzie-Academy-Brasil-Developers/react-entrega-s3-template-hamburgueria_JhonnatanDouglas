@@ -19,27 +19,27 @@ export const GlobalStyles = createGlobalStyle`
 
   --font-family: 'Inter', sans-serif;
 
-  --font-size-6: 26px;
-  --font-size-5: 22px;
-  --font-size-4: 18px;
-  --font-size-3: 16px;
-  --font-size-2: 14px;
-  --font-size-1: 12px;
+  --font-size-6: 1.625rem; 
+  --font-size-5: 1.375rem; 
+  --font-size-4: 1.125rem; 
+  --font-size-3: 1rem; 
+  --font-size-2: 0.875rem; 
+  --font-size-1: 0.75rem; 
 
-  --font-weight-4: 700;
-  --font-weight-3: 600;
-  --font-weight-2: 500;
-  --font-weight-1: 400;
+  --font-weight-4: 700; 
+  --font-weight-3: 600; 
+  --font-weight-2: 500; 
+  --font-weight-1: 400; 
 
-  --line-height-8: 34px;
-  --line-height-7: 28px;
-  --line-height-6: 24px;
-  --line-height-5: 20px;
-  --line-height-4: 18px;
-  --line-height-3: 16px;
-  --line-height-2: 15px;
-  --line-height-1: 0px;
+  --line-height-8: 2.125rem; 
+  --line-height-7: 1.75rem; 
+  --line-height-6: 1.5rem; 
+  --line-height-5: 1.25rem; 
+  --line-height-4: 1.125rem; 
+  --line-height-3: 1rem; 
+  --line-height-2: 0.9375rem; 
+  --line-height-1: 0rem; 
 
-  --border-radius-1: 8px;
+  --border-radius-1: 0.5rem; 
   }
 `
