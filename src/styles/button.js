@@ -88,3 +88,40 @@ export const SearchButton = styled.button`
     transition: 0.5s;
   }
 `
+
+export const StyledDefaultButton = styled.button`
+  width: 100%;
+  padding: 0rem 1.25rem;
+  gap: 0.625rem;
+  height: 2.5rem;
+
+  font-weight: var(--font-weight-3);
+  font-size: var(--font-size-2);
+  line-height: var(--line-height-3);
+
+  color: var(--color-white);
+
+  ${({ sizeButton }) => {
+    if (sizeButton === "medium") {
+      return "height: 3.75rem;"
+    } else if (sizeButton === "medium-default") {
+      return "height: 3.75rem; max-width: 6.5625rem;"
+    } else if (sizeButton === "small") {
+      return "height: 2.5rem;"
+    } else if (sizeButton === "small-default") {
+      return "height: 2.5rem; max-width: 6.5625rem;"
+    } else {
+      return "height: 2.5rem;"
+    }
+  }}
+
+  background-color: var(--color-grey-300);
+  border: 0.125rem solid var(--color-grey-300);
+  border-radius: var(--border-radius-1);
+
+  :hover{
+    background-color: var(--color-primary);
+    border: 0.125rem solid var(--color-primary);
+    transition: 0.5s;
+  }
+`
