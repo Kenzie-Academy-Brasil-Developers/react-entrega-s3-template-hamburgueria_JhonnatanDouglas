@@ -6,6 +6,8 @@ function App() {
     <>
       <ResetCss />
       <GlobalStyles />
+      <header></header>
+      <main></main>
     </>
   )
 }
