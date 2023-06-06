@@ -17,7 +17,7 @@ export const GlobalStyles = createGlobalStyle`
   --color-sucess: #168821;
   --color-information: #155bcb;
 
-  --font-family: 'Inter', sans-serif;
+  --font-family-default: 'Inter', sans-serif;
 
   --font-size-6: 1.625rem; 
   --font-size-5: 1.375rem; 
@@ -41,5 +41,6 @@ export const GlobalStyles = createGlobalStyle`
   --line-height-1: 0rem; 
 
   --border-radius-1: 0.5rem; 
+  --border-radius-0: 0.3125rem; 
   }
 `
