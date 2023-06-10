@@ -1,6 +1,6 @@
-# 🏁 Entrega: Nu Kenzie
+# 🏁 Entrega: Burger Kenzie
 
-### :date: **Período do Projeto:** Módulo 3 - Semana 2
+### :date: **Período do Projeto:** Módulo 3 - Semana 3
 ### :iphone: **Mobile First =** True
 
 
