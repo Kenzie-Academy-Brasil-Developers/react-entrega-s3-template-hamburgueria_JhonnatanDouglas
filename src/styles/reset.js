@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export const ResetCss = createGlobalStyle`
   /* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126
@@ -61,5 +61,8 @@ export const ResetCss = createGlobalStyle`
   }
   button {
     cursor: pointer;
+  }
+  main {
+    margin-top: 80px;
   }
 `

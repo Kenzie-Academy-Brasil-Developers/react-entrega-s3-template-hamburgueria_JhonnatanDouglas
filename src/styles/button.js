@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 export const StyledPrimaryButton = styled.button`
   width: 100%;
@@ -10,16 +10,16 @@ export const StyledPrimaryButton = styled.button`
   line-height: var(--line-height-4);
 
   ${({ sizeButton }) => {
-    if (sizeButton === "medium") {
-      return "height: 3.75rem;"
-    } else if (sizeButton === "medium-default") {
-      return "height: 3.75rem; max-width: 8.4375rem;"
-    } else if (sizeButton === "small") {
-      return "height: 2.5rem;"
-    } else if (sizeButton === "small-default") {
-      return "height: 2.5rem; max-width: 8.4375rem;"
+    if (sizeButton === 'medium') {
+      return 'height: 3.75rem;'
+    } else if (sizeButton === 'medium-default') {
+      return 'height: 3.75rem; max-width: 8.4375rem;'
+    } else if (sizeButton === 'small') {
+      return 'height: 2.5rem;'
+    } else if (sizeButton === 'small-default') {
+      return 'height: 2.5rem; max-width: 8.4375rem;'
     } else {
-      return "height: 3.75rem;"
+      return 'height: 3.75rem;'
     }
   }}
 
@@ -46,16 +46,16 @@ export const StyledSecondaryButton = styled.button`
   line-height: var(--line-height-4);
 
   ${({ sizeButton }) => {
-    if (sizeButton === "medium") {
-      return "height: 3.75rem;"
-    } else if (sizeButton === "medium-default") {
-      return "height: 3.75rem; max-width: 8.4375rem;"
-    } else if (sizeButton === "small") {
-      return "height: 2.5rem;"
-    } else if (sizeButton === "small-default") {
-      return "height: 2.5rem; max-width: 8.4375rem;"
+    if (sizeButton === 'medium') {
+      return 'height: 3.75rem;'
+    } else if (sizeButton === 'medium-default') {
+      return 'height: 3.75rem; max-width: 8.4375rem;'
+    } else if (sizeButton === 'small') {
+      return 'height: 2.5rem;'
+    } else if (sizeButton === 'small-default') {
+      return 'height: 2.5rem; max-width: 8.4375rem;'
     } else {
-      return "height: 3.75rem;"
+      return 'height: 3.75rem;'
     }
   }}
 
@@ -102,16 +102,16 @@ export const StyledDefaultButton = styled.button`
   color: var(--color-white);
 
   ${({ sizeButton }) => {
-    if (sizeButton === "medium") {
-      return "height: 3.75rem;"
-    } else if (sizeButton === "medium-default") {
-      return "height: 3.75rem; max-width: 6.5625rem;"
-    } else if (sizeButton === "small") {
-      return "height: 2.5rem;"
-    } else if (sizeButton === "small-default") {
-      return "height: 2.5rem; max-width: 6.5625rem;"
+    if (sizeButton === 'medium') {
+      return 'height: 3.75rem;'
+    } else if (sizeButton === 'medium-default') {
+      return 'height: 3.75rem; max-width: 6.5625rem;'
+    } else if (sizeButton === 'small') {
+      return 'height: 2.5rem;'
+    } else if (sizeButton === 'small-default') {
+      return 'height: 2.5rem; max-width: 6.5625rem;'
     } else {
-      return "height: 2.5rem;"
+      return 'height: 2.5rem;'
     }
   }}
 
