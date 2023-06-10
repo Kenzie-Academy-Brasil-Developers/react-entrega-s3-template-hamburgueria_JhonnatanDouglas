@@ -4,7 +4,7 @@
 ### :iphone: **Mobile First =** True
 
 
-##### **Descrição:** Este desenvolvimento foi feito com o React. A aplicação é baseada em um App de Hamburgueria. Onde vocêpode adicionar, remover e procurar um produto específicoda lista.
+##### **Descrição:** Este desenvolvimento foi feito com o React. A aplicação é baseada em um App de Hamburgueria. Onde você pode adicionar, remover e procurar um produto específico da lista.
 
 ##### O principal objetivo foi exercitar o que foi aprendido de useState, useEffect, useRef e em conjunto com API. Utilizando também Props e métodos imutáveis.
 
