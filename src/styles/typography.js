@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components"
+import styled, { css } from 'styled-components'
 
 const defaultSettings = css`
   font-family: var(--font-family-default);
@@ -42,7 +42,7 @@ export const StyledBodyP = styled.p`
   color: var(--color-grey-500);
 
   ${({ isBold }) => {
-    return isBold ? "font-weight: 600;" : "font-weight: 400;"
+    return isBold ? 'font-weight: 600;' : 'font-weight: 400;'
   }}
 `
 

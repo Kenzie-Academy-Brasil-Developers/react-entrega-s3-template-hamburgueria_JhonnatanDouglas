@@ -1,9 +1,34 @@
-import styled from "styled-components"
+import styled from 'styled-components'
+
+export const StyledBurgerCardUl = styled.ul`
+  display: flex;
+  padding: 0.3125rem 0rem;
+  overflow-x: auto;
+  width: 100%;
+  min-width: 15.5rem;
+  gap: 1.25rem;
+
+  ::-webkit-scrollbar {
+    height: 0.625rem;
+    width: 0.625rem;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+  }
+
+  @media screen and (min-width: 64rem) {
+    flex-wrap: wrap;
+    overflow-x: none;
+    gap: 3.125rem 4.0625rem;
+  }
+`
 
 export const StyledCardLi = styled.li`
   display: flex;
   flex-direction: column;
-  width: 18.75rem;
+  width: 100%;
+  min-width: 15.5rem;
+  max-width: 18.75rem;
   height: 21.5625rem;
   background-color: var(--color-white);
   border: 0.125rem solid var(--color-grey-200);
@@ -19,7 +44,8 @@ export const StyledCardLi = styled.li`
   }
 
   > figure > img {
-    width: 18.75rem;
+    width: 100%;
+    max-width: 18.75rem;
     height: 9.375rem;
     object-position: center 75%;
     object-fit: none;
@@ -60,7 +86,7 @@ export const StyledCardLi = styled.li`
     padding: 0.625rem 1.25rem;
   }
 
-  :hover{
+  :hover {
     border: 0.125rem solid var(--color-primary);
     transition: 0.5s;
   }
