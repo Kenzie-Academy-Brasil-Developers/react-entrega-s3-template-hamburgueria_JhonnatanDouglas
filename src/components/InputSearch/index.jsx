@@ -1,33 +1,59 @@
-import { useEffect, useState } from 'react'
-import { StyledSearchButton } from '../ButtonSearch'
-import { DivSearch } from './styles'
-import { api } from '../../services/api'
+import { useEffect, useState } from "react"
+import { StyledSearchButton } from "../ButtonSearch"
+import { DivSearch } from "./styles"
+import { api } from "../../services/api"
 
 export const StyledInputSearch = ({
   productsList,
   setProductsList,
   setIsLoading,
 }) => {
-  const [inputSearch, setInputSearch] = useState('')
-  const [text, setText] = useState('')
+  const [inputSearch, setInputSearch] = useState("")
+  const [text, setText] = useState("")
 
   useEffect(() => {
-    if (text === '') {
+    if (text === "") {
       async function loadData() {
         try {
           setIsLoading(true)
-          const response = await api.get('/products')
+          const response = await api.get("/products")
           setProductsList(response.data)
         } catch (error) {
-          toast.error('Ops! Não foi possível carregar a lista de produtos', {
-            position: 'top-center',
+          toast.error("Ops! Não foi possível carregar a lista de produtos", {
+            position: "top-center",
             autoClose: 1000,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
-            theme: 'light',
+            theme: "light",
+          })
+          console.error(error)
+        } finally {
+          setIsLoading(false)
+        }
+      }
+      loadData()
+    } else {
+      async function loadData() {
+        try {
+          setIsLoading(true)
+          const { data } = await api.get("/products")
+          const filteredProducts = data.filter((product) =>
+            product.name.toLowerCase().includes(text.toLowerCase())
+          )
+          setProductsList(filteredProducts)
+        } catch (error) {
+          toast.error("Ops! Não foi possível carregar a lista de produtos", {
+            position: "top-center",
+            autoClose: 1000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
           })
           console.error(error)
         } finally {
@@ -36,11 +62,6 @@ export const StyledInputSearch = ({
       }
       loadData()
     }
-
-    const filteredProducts = productsList.filter((product) =>
-      product.name.toLowerCase().includes(text.toLowerCase())
-    )
-    setProductsList(filteredProducts)
   }, [text])
 
   const sentSearch = () => {
