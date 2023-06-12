@@ -16,8 +16,8 @@ export const StyledInputSearch = ({
       async function loadData() {
         try {
           setIsLoading(true)
-          const response = await api.get("/products")
-          setProductsList(response.data)
+          const { data } = await api.get("/products")
+          setProductsList(data)
         } catch (error) {
           toast.error("Ops! Não foi possível carregar a lista de produtos", {
             position: "top-center",
